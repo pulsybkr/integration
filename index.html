@@ -1,76 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="level.css">
+
 </head>
 <body>
-  <!-- header -->
-  <header>
-    <!-- menu -->
-   <section id="menu">
-    <div class="logo">
-      <div class="logo1">
-        <img src="asset/img/logo.png" alt="logo">
-      </div>
-      <div class="textlogo">
-        <h4>FABRICANT DE <br> VERANDAS</h4>
-        <h2>BAIES ET VERANDAS</h2>
-        <h3>De France</h3>
-      </div>
-      <div class="logo2">
-        <img src="asset/img/rge.jpg" alt="logo RGE">
-      </div>
-    </div>
-    <div class="nav">
-      <ul>
-        <li><a href="#">Nos vérandas</a> 
-          <ul class="menu_deroulant">
-            <li><a href="#">Verandas 1</a></li>
-            <li><a href="#">Verandas 2</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Nos réalisations</a> </li>
-        <li><a href="#">Devis</a> </li>
-        <li><a href="#" class="contact">Contact</a> </li>
-      </ul>
-    </div>
-   </section>
 
-   <!-- banniere -->
-   <section id="banniere">
-      <div class="devis">
-        <h2>Estimer votre projet de Véranda gratuitement</h2>
-        <form action="">
-          <div class="form">
-            <div>
-              <label for="name">Nom</label>
-              <input type="text" name="nom" id="nom" placeholder="nom">
+    <div class="jeu">
+        <div class="level">
+           <h2 class="nextlevel">
+                VOUS AVEZ VAINCU L'enemie
+           </h2>
+           <p>
+            appuyer sur la touche entree pour passer au prochain étap
+
+           </p>
+        </div>
+        <div class="stat">
+            <div class="leftstat">
+                <div class="nameV nameleft">
+                    
+                </div>
+                <div class="barreV barreleft">
+
+                </div>
+                <div class="forceV forceleft">
+                    *****
+                </div>
             </div>
-            <div>
-              <label for="phone">Téléphone:</label>
-              <input type="number" name="phone" id="phone" placeholder="064325255">
+            <div class="rightstat">
+                <div class="nameV nameright">
+                </div>
+                <div class="barreV barreright">
+
+                </div>
+                <div class="forceV forceright">
+                    ****
+                </div>
             </div>
-            <div>
-              <label for="mail">Email</label>
-              <input type="email" name="mail" id="mail" placeholder="text@example.com">
+        </div>
+        <div class="hero">
+            <div class="feu">
+                <img src="perso/hero/feu.png" alt="">                
             </div>
-            <div>
-              <label for="post">Code postal:</label>
-              <input type="number" name="post" id="post" placeholder="91860">
+        </div>
+        <div class="enemy">
+            <div class="feuE">
+                <img src="perso/enemy/feu.png" alt="">                
             </div>
-            <div>
-              <label for="surface">Surface :</label>
-              <input type="number" name="surface" id="surface">
-            </div>
-          </div>
-          <button>Votre estimation</button>
-        </form>
-      </div>
-   </section>
-  </header>
+        </div>
+    </div>
+
+
+    <!-- fichier json -->
+    <script type="text/javascript" src="./json_file/players.json"></script>
+    <script type="text/javascript" src="./json_file/enemies.json"></script>
+
+    <script src="app.js"></script>
+    <!-- <script src="stat.js"></script> -->
+
 </body>
 </html>
