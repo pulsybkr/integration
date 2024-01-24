@@ -1,2 +1,2 @@
 # integration
- Test d'integration
+Petit jeu video, fais en javascript
